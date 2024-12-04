@@ -142,20 +142,6 @@ body.dark-mode .right-content {
   color: inherit; /* Gunakan warna teks yang sesuai dengan mode */
 }
 
-.cta-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.cta-button:hover {
-  background-color: #0056b3;
-}
-
 /* Footer */
 footer {
   text-align: center;
