@@ -1,0 +1,172 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #181818;
+  color: #ffffff;
+}
+
+/* Header dan Navbar */
+header {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 1rem 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
+/* Dropdown untuk Settings */
+.settings-menu .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  color: #333;
+  padding: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.settings-menu .dropdown label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.settings-menu:hover .dropdown {
+  display: block;
+}
+
+body.dark-mode header {
+  background-color: #333;
+}
+
+body.dark-mode .navbar a {
+  color: #ffffff;
+}
+
+body.dark-mode .dropdown {
+  background-color: #333;
+  color: #ffffff;
+}
+
+/* Main Content Layout */
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.left-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.left-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Right Content */
+.right-content {
+  flex: 1;
+  padding-left: 2rem;
+  background-color: #f9f9f9; /* Light Mode background */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s; /* Animasi untuk transisi */
+}
+
+body.dark-mode .right-content {
+  background-color: #333; /* Dark Mode background */
+  color: #ffffff; /* Dark Mode text */
+}
+
+.right-content h1 {
+  font-size: 2rem;
+  color: inherit; /* Gunakan warna teks yang sesuai dengan mode */
+}
+
+.right-content p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: inherit; /* Gunakan warna teks yang sesuai dengan mode */
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #007bff;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+body.dark-mode footer {
+  background-color: #333;
+}
